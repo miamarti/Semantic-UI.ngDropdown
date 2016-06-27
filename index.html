@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Semantic-ui.ngdropdown by miamarti</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Semantic-ui.ngdropdown</h1>
+      <h2 class="project-tagline">Semantic UI - Dropdown AngularJS</h2>
+      <a href="https://github.com/miamarti/Semantic-UI.ngDropdown" class="btn">View on GitHub</a>
+      <a href="https://github.com/miamarti/Semantic-UI.ngDropdown/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/miamarti/Semantic-UI.ngDropdown/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="semantic-uingdropdown" class="anchor" href="#semantic-uingdropdown" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Semantic-UI.ngDropdown</h1>
+
+<p>Semantic UI - Dropdown AngularJS
+<br>Semantic is a UI component framework based around useful principles from natural language. <a href="http://www.semantic-ui.com">http://www.semantic-ui.com</a></p>
+
+<p>
+  <a href="https://gitter.im/miamarti/Semantic-UI.ngDropdown"><img src="https://img.shields.io/gitter/room/nwjs/nw.js.svg"></a>
+  <img src="https://img.shields.io/badge/semanticUI.ngDropdown-release-green.svg">
+  <img src="https://img.shields.io/badge/version-1.0.0-blue.svg">
+  <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
+  <a href="https://github.com/miamarti/Semantic-UI.ngDropdown/tarball/master"><img src="https://img.shields.io/github/downloads/atom/atom/latest/total.svg"></a>
+  <img src="https://img.shields.io/bower/v/bootstrap.svg">
+</p>
+
+<h2>
+<a id="dropdown" class="anchor" href="#dropdown" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dropdown</h2>
+
+<p>A dropdown allows a user to select a value from a series of options.</p>
+
+<h2>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dependencies</h2>
+
+<ul>
+<li>AngularJS</li>
+</ul>
+
+<h2>
+<a id="implementation" class="anchor" href="#implementation" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Implementation</h2>
+
+<pre><code>&lt;ng-dropdown 
+  ng-model="modelA" 
+  ng-option="optionList"&gt;
+&lt;/ng-dropdown&gt;
+</code></pre>
+
+<h2>
+<a id="option-list" class="anchor" href="#option-list" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Option List</h2>
+
+<pre><code>// Expected server response
+[
+  {"id": 1, "value": "Option 1"},
+  {"id": 2, "value": "Option 2"}
+]
+</code></pre>
+
+<p>OR</p>
+
+<pre><code>In this case simply assign the parameter data-label as a "label"
+</code></pre>
+
+<pre><code>// Expected server response
+[
+  {"id": 1, "label": "Option 1"},
+  {"id": 2, "label": "Option 2"}
+]
+</code></pre>
+
+<p>OR</p>
+
+<pre><code>// Expected server response
+{
+  "1": {"id": 1, "value": "Option 1"},
+  "2": {"id": 2, "value": "Option 2"}
+}
+</code></pre>
+
+<h2>
+<a id="parameters" class="anchor" href="#parameters" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Parameters</h2>
+
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Type</th>
+<th>Dinamic</th>
+<th>Mandatory</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ng-model</td>
+<td>String</td>
+<td>True</td>
+<td>True</td>
+<td>Scope of the attribute that will be the model</td>
+</tr>
+<tr>
+<td>ng-option</td>
+<td>Array</td>
+<td>True</td>
+<td>True</td>
+<td>Combo Object List</td>
+</tr>
+<tr>
+<td>ng-multiple</td>
+<td>Boolean</td>
+<td>false</td>
+<td>false</td>
+<td>Allows selection of more than one value in the combo</td>
+</tr>
+<tr>
+<td>ng-additions</td>
+<td>Boolean</td>
+<td>false</td>
+<td>False</td>
+<td>It allows adding options that are not on the list</td>
+</tr>
+<tr>
+<td>data-url</td>
+<td>String</td>
+<td>false</td>
+<td>False</td>
+<td>URL that will be requested for consultations on the back-end</td>
+</tr>
+<tr>
+<td>data-label</td>
+<td>String</td>
+<td>false</td>
+<td>False</td>
+<td>JSON attribute name to be used as label</td>
+</tr>
+</tbody>
+</table>
+
+<h2>
+<a id="custom-label" class="anchor" href="#custom-label" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Custom Label</h2>
+
+<pre><code>&lt;ng-dropdown 
+  ng-model="modelA" 
+  ng-option="optionList" 
+  data-label="name"&gt;
+&lt;/ng-dropdown&gt;
+</code></pre>
+
+<h2>
+<a id="additional-values-suggestion" class="anchor" href="#additional-values-suggestion" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Additional values (Suggestion)</h2>
+
+<p><img src="https://c3.staticflickr.com/8/7329/27330447674_1b8bf92276_m.jpg" alt="Semantic-UI.ngDropdown-02"></p>
+
+<pre><code>&lt;ng-dropdown 
+  ng-model="modelA" 
+  ng-option="optionList"
+  ng-additions="true"&gt;
+&lt;/ng-dropdown&gt;
+</code></pre>
+
+<h2>
+<a id="remote-api" class="anchor" href="#remote-api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Remote API</h2>
+
+<p><img src="https://c1.staticflickr.com/8/7418/27330447744_db89157f9c.jpg" width="353" alt="Semantic-UI.ngDropdown-01"></p>
+
+<pre><code>&lt;ng-dropdown 
+  ng-model="modelA" 
+  ng-option="optionList" 
+  data-url="/api/search?={query}"&gt;
+&lt;/ng-dropdown&gt;
+</code></pre>
+
+<pre><code>// Expected server response
+{
+    "success": true,
+    "results": [
+      {
+        // name displayed in dropdown
+        "name"  : "Choice 1",
+         // selected value
+        "value" : "value1",
+         // name displayed after selection (optional)
+        "text"  : "Choice 1"
+         // whether field should be displayed as disabled (optional)
+        "disabled"  : false
+       },
+      {
+        "name"  : "Choice 2",
+        "value" : "value2",
+        "text"  : "Choice 2"
+      },
+      {
+        "name"  : "Choice 3",
+        "value" : "value3",
+        "text"  : "Choice 3"
+      },
+      {
+        "name"  : "Choice 4",
+        "value" : "value4",
+        "text"  : "Choice 4"
+      },
+      {
+        "name"  : "Choice 5",
+        "value" : "value5",
+        "text"  : "Choice 5"
+      }
+    ]
+}
+</code></pre>
+
+<h2>
+<a id="multiple-selection" class="anchor" href="#multiple-selection" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Multiple Selection</h2>
+
+<p><img src="https://c5.staticflickr.com/8/7345/27330447684_46276b5e87.jpg" width="500" height="40" alt="Semantic-UI.ngDropdown-03"></p>
+
+<pre><code>&lt;ng-dropdown 
+  ng-model="modelA" 
+  ng-option="optionList"
+  ng-multiple="true"&gt;
+&lt;/ng-dropdown&gt;
+</code></pre>
+
+<h2>
+<a id="bower-install-de-dependency" class="anchor" href="#bower-install-de-dependency" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Bower install de dependency</h2>
+
+<pre><code>$ bower install semanticUI.ngDropdown --save
+</code></pre>
+
+<h2>
+<a id="module-angularjs-include" class="anchor" href="#module-angularjs-include" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Module AngularJS include</h2>
+
+<pre><code>angular.module('example', ["ngDropdown"]);
+</code></pre>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/miamarti/Semantic-UI.ngDropdown">Semantic-ui.ngdropdown</a> is maintained by <a href="https://github.com/miamarti">miamarti</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
