@@ -1,8 +1,9 @@
 # Semantic-UI.ngDropdown
 Semantic UI - Dropdown AngularJS
+<br>Semantic is a UI component framework based around useful principles from natural language. http://www.semantic-ui.com
 
 <p>
-  <a href="https://gitter.im/miamarti/semanticUI.ngDropdown" target="_blank"><img src="https://img.shields.io/gitter/room/nwjs/nw.js.svg"></a>
+  <a href="https://gitter.im/miamarti/Semantic-UI.ngDropdown" target="_blank"><img src="https://img.shields.io/gitter/room/nwjs/nw.js.svg"></a>
   <img src="https://img.shields.io/badge/semanticUI.ngDropdown-release-green.svg">
   <img src="https://img.shields.io/badge/version-1.0.0-blue.svg">
   <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
