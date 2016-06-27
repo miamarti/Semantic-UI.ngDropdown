@@ -10,8 +10,6 @@ Semantic UI - Dropdown AngularJS
   <img src="https://img.shields.io/bower/v/bootstrap.svg">
 </p>
 
-
-
 <h3>Dropdown</h3>
 A dropdown allows a user to select a value from a series of options.
 
@@ -28,6 +26,16 @@ A dropdown allows a user to select a value from a series of options.
   data-label="name">
 </ng-dropdown>
 ```
+
+## Parameters
+
+| Name         | Type    | Dinamic | Mandatory | Description                                                  |
+| ------------ | ------- | ------- | --------- | ------------------------------------------------------------ |
+| ng-model     | String  | True    | True      | Scope of the attribute that will be the model                |
+| ng-option    | Array   | True    | True      | Combo Object List                                            |
+| ng-additions | Boolean | false   | False     | It allows adding options that are not on the list            |
+| data-url     | String  | false   | False     | URL that will be requested for consultations on the back-end |
+| data-label   | String  | false   | False     | JSON attribute name to be used as label                      |
 
 ## Bower install de dependency
 ```
