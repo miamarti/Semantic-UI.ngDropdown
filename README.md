@@ -73,7 +73,7 @@ OR
 ```
 
 ## Additional values (Suggestion)
-<img src="https://c3.staticflickr.com/8/7329/27330447674_1b8bf92276_m.jpg" width="156" height="78" alt="Semantic-UI.ngDropdown-02">
+<img src="https://c3.staticflickr.com/8/7329/27330447674_1b8bf92276_m.jpg" alt="Semantic-UI.ngDropdown-02">
 
 ```
 <ng-dropdown 
@@ -134,7 +134,7 @@ OR
 ```
 
 ## Multiple Selection
-<img src="https://c5.staticflickr.com/8/7345/27330447684_46276b5e87_m.jpg" width="240" height="19" alt="Semantic-UI.ngDropdown-03">
+<img src="https://c5.staticflickr.com/8/7345/27330447684_46276b5e87_m.jpg" alt="Semantic-UI.ngDropdown-03">
 
 ```
 <ng-dropdown 
