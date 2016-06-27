@@ -84,7 +84,7 @@ OR
 ```
 
 ## Remote API
-<img src="https://c1.staticflickr.com/8/7418/27330447744_db89157f9c.jpg" width="353" height="300" alt="Semantic-UI.ngDropdown-01">
+<img src="https://c1.staticflickr.com/8/7418/27330447744_db89157f9c.jpg" width="353" alt="Semantic-UI.ngDropdown-01">
 
 ```
 <ng-dropdown 
@@ -134,7 +134,7 @@ OR
 ```
 
 ## Multiple Selection
-<img src="https://c5.staticflickr.com/8/7345/27330447684_46276b5e87_m.jpg" alt="Semantic-UI.ngDropdown-03">
+<img src="https://c5.staticflickr.com/8/7345/27330447684_46276b5e87.jpg" width="500" height="40" alt="Semantic-UI.ngDropdown-03">
 
 ```
 <ng-dropdown 
