@@ -1,4 +1,6 @@
 # Semantic-UI.ngDropdown
+
+[![Join the chat at https://gitter.im/miamarti/Semantic-UI.ngDropdown](https://badges.gitter.im/miamarti/Semantic-UI.ngDropdown.svg)](https://gitter.im/miamarti/Semantic-UI.ngDropdown?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 Semantic UI - Dropdown AngularJS
 
 <p>
