@@ -26,6 +26,7 @@ A dropdown allows a user to select a value from a series of options.
 
 ## Option List
 ```
+// Expected server response
 [
   {"id": 1, "value": "Option 1"},
   {"id": 2, "value": "Option 2"}
@@ -35,6 +36,7 @@ OR
 
     In this case simply assign the parameter data-label as a "label"
 ```
+// Expected server response
 [
   {"id": 1, "label": "Option 1"},
   {"id": 2, "label": "Option 2"}
@@ -42,6 +44,7 @@ OR
 ```
 OR
 ```
+// Expected server response
 {
   "1": {"id": 1, "value": "Option 1"},
   "2": {"id": 2, "value": "Option 2"}
