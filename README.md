@@ -10,21 +10,42 @@ Semantic UI - Dropdown AngularJS
   <img src="https://img.shields.io/bower/v/bootstrap.svg">
 </p>
 
-<h3>Dropdown</h3>
+## Dropdown
 A dropdown allows a user to select a value from a series of options.
 
-<h3>Dependencies</h3>
+## Dependencies
 * AngularJS
 
-<h3>Implementation</h3>
+## Implementation
 ```
 <ng-dropdown 
   ng-model="modelA" 
-  ng-option="optionList"
-  ng-additions="true" 
-  data-url="/api/search?={query}" 
-  data-label="name">
+  ng-option="optionList">
 </ng-dropdown>
+```
+
+## Option List
+```
+[
+  {"id": 1, "value": "Option 1"},
+  {"id": 2, "value": "Option 2"}
+]
+```
+OR
+
+    In this case simply assign the parameter data-label as a "label"
+```
+[
+  {"id": 1, "label": "Option 1"},
+  {"id": 2, "label": "Option 2"}
+]
+```
+OR
+```
+{
+  "1": {"id": 1, "value": "Option 1"},
+  "2": {"id": 2, "value": "Option 2"}
+}
 ```
 
 ## Parameters
@@ -36,6 +57,72 @@ A dropdown allows a user to select a value from a series of options.
 | ng-additions | Boolean | false   | False     | It allows adding options that are not on the list            |
 | data-url     | String  | false   | False     | URL that will be requested for consultations on the back-end |
 | data-label   | String  | false   | False     | JSON attribute name to be used as label                      |
+
+## Custom Label
+```
+<ng-dropdown 
+  ng-model="modelA" 
+  ng-option="optionList" 
+  data-label="name">
+</ng-dropdown>
+```
+
+## Additional values (Suggestion)
+```
+<ng-dropdown 
+  ng-model="modelA" 
+  ng-option="optionList"
+  ng-additions="true">
+</ng-dropdown>
+```
+
+## Remote API
+```
+<ng-dropdown 
+  ng-model="modelA" 
+  ng-option="optionList" 
+  data-url="/api/search?={query}">
+</ng-dropdown>
+```
+
+```
+// Expected server response
+{
+    "success": true,
+    "results": [
+      {
+        // name displayed in dropdown
+        "name"  : "Choice 1",
+         // selected value
+        "value" : "value1",
+         // name displayed after selection (optional)
+        "text"  : "Choice 1"
+         // whether field should be displayed as disabled (optional)
+        "disabled"  : false
+       },
+      {
+        "name"  : "Choice 2",
+        "value" : "value2",
+        "text"  : "Choice 2"
+      },
+      {
+        "name"  : "Choice 3",
+        "value" : "value3",
+        "text"  : "Choice 3"
+      },
+      {
+        "name"  : "Choice 4",
+        "value" : "value4",
+        "text"  : "Choice 4"
+      },
+      {
+        "name"  : "Choice 5",
+        "value" : "value5",
+        "text"  : "Choice 5"
+      }
+    ]
+}
+```
 
 ## Bower install de dependency
 ```
