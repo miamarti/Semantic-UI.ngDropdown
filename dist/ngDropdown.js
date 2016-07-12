@@ -78,7 +78,7 @@
                         if (value) {
                             optionsRender = false;
                             var type = scope.ngMultiple ? ' fluid multiple search' : '';
-                            var sleep = scope.ngMultiple ? 1200 : 500;
+                            var sleep = scope.ngMultiple ? 500 : 100;
                             var html = '';
                             html += '<div class="ui selection search' + type + ' dropdown">';
                             html += '    <i class="dropdown icon"></i>';
