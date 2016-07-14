@@ -85,7 +85,7 @@
                             html += '    <div class="default text"></div>';
                             html += '    <div class="menu">';
                             for (var key in value) {
-                                html += '<div class="item" data-value="' + value[key].id + '">' + ((elem[0].dataset.label ? value[key][elem[0].dataset.label] : false) || value[key].value || value[key].name) + ' </div>';
+                                html += '<div class="item" data-value="' + value[key].id + '">' + ((elem[0].dataset.label ? value[key][elem[0].dataset.label] : false) || value[key].value || value[key].name || '') + ' </div>';
                             }
                             html += '    </div>';
                             html += '</div>';
