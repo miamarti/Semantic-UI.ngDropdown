@@ -1,6 +1,6 @@
 {
   "name": "ng.dropdown",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "keywords": ["semantic-ui", "dropdown", "sugestion"],
   "main": ["dist/ngDropdown.js"],
   "ignore": [
