@@ -81,7 +81,7 @@
                             var sleep = scope.ngMultiple ? 500 : 100;
                             var html = '';
                             html += '<div class="ui selection search' + type + ' dropdown">';
-                            html += '    <i class="dropdown icon"></i>';
+                            html += '    <i class="dropdown icon" style="z-index: 0;"></i>';
                             html += '    <div class="default text"></div>';
                             html += '    <div class="menu">';
                             for (var key in value) {
