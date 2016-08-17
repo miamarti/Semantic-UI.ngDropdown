@@ -56,10 +56,11 @@ OR
 
 | Name         | Type    | Dinamic | Mandatory | Description                                                  |
 | ------------ | ------- | ------- | --------- | ------------------------------------------------------------ |
-| ng-model     | String  | True    | True      | Scope of the attribute that will be the model                |
-| ng-option    | Array   | True    | True      | Combo Object List                                            |
+| ng-model     | String  | true    | true      | Scope of the attribute that will be the model                |
+| ng-option    | Array   | true    | true      | Combo Object List                                            |
 | ng-multiple  | Boolean | false   | false     | Allows selection of more than one value in the combo         |
 | ng-additions | Boolean | false   | False     | It allows adding options that are not on the list            |
+| ng-disabled  | Boolean | true    | False     | Makes the inactive component                                 |
 | data-url     | String  | false   | False     | URL that will be requested for consultations on the back-end |
 | data-label   | String  | false   | False     | JSON attribute name to be used as label                      |
 
